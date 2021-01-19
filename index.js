@@ -1,15 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const MongoClient = require("mongodb").MongoClient;
-const mongoClient = new MongoClient("mongodb://localhost:27017/", { useNewUrlParser: true });
-mongoClient.connect(function(err, client){
- 
-    if(err){
-        return console.log(err);
-    }
-    
-    client.close();
-});
 
 const app = express();
 
